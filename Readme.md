@@ -31,7 +31,7 @@ yourbundle.service_router_name:
     public: false
     class: Symfony\Component\Routing\Router
     arguments: ['@routing.loader', '@@YourBundle/Resources/config/routing.yml']
-    tags: router
+    tags: [router]
     # OR tags: - { name: router, priority: 10 }
 ```
 
