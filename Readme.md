@@ -6,22 +6,12 @@
 composer require yottacms/yotta-router-bundle
 ```
 ```PHP    
-// app/AppKernel.php
-use YottaCms\Framework\Component\HttpKernel\Kernel;
+// config/bundles.php
 // ...
-
-class AppKernel extends Kernel
-{
-    public function registerBundles()
-    {
-        $bundles = array(
-            // ...
-            \YottaCms\Bundle\YottaRouterBundle\YottaRouterBundle::class
-        );
-        // ...
-    }
+return [
+    \YottaCms\Bundle\YottaRouterBundle\YottaRouterBundle::class => ['all' => true],
     // ...
-}
+];
 ```
 
 ## Usage
